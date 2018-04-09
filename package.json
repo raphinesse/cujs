@@ -1,0 +1,47 @@
+{
+  "name": "cujs",
+  "version": "0.1.0",
+  "description": "A configurable wrapper around uglifyjs",
+  "license": "MIT",
+  "repository": "raphinesse/cujs",
+  "author": "Raphael von der Grün",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "bin": "index.js",
+  "keywords": [
+    "uglify",
+    "uglifyjs",
+    "uglify-es",
+    "config",
+    "configurable",
+    "defaults",
+    "zero-config",
+    "cosmiconfig",
+    "cli"
+  ],
+  "dependencies": {
+    "cosmiconfig": "^4.0.0",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.5",
+    "npm-which": "^3.0.1",
+    "shell-quote": "^1.6.1"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "xo": "^0.20.3"
+  },
+  "xo": {
+    "space": 2,
+    "prettier": true
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true
+  }
+}
