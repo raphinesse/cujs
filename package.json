@@ -1,6 +1,6 @@
 {
   "name": "cujs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A configurable wrapper around uglifyjs",
   "license": "MIT",
   "repository": "raphinesse/cujs",
