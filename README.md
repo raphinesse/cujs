@@ -26,7 +26,6 @@ into this
   },
   "cujs": {
     "input": "dist/awesome-lib.js",
-    "output": "dist/awesome-lib.min.js",
     "sourceMap": true
   }
 }
