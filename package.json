@@ -3,30 +3,26 @@
   "version": "0.1.1",
   "description": "A configurable wrapper around uglifyjs",
   "license": "MIT",
-  "repository": "raphinesse/cujs",
   "author": "Raphael von der Grün",
-  "engines": {
-    "node": ">=6"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "bin": "index.js",
   "files": [
     "index.js",
     "lib"
   ],
-  "keywords": [
-    "uglify",
-    "uglifyjs",
-    "uglify-es",
-    "config",
-    "configurable",
-    "defaults",
-    "zero-config",
-    "cosmiconfig",
-    "cli"
-  ],
+  "bin": "index.js",
+  "repository": "raphinesse/cujs",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "xo": {
+    "space": 2,
+    "prettier": true
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "dependencies": {
     "cosmiconfig": "^4.0.0",
     "debug": "^3.1.0",
@@ -38,14 +34,18 @@
     "ava": "^0.25.0",
     "xo": "^0.20.3"
   },
-  "xo": {
-    "space": 2,
-    "prettier": true
+  "engines": {
+    "node": ">=6"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSpacing": true
-  }
+  "keywords": [
+    "cli",
+    "config",
+    "configurable",
+    "cosmiconfig",
+    "defaults",
+    "uglify",
+    "uglify-es",
+    "uglifyjs",
+    "zero-config"
+  ]
 }
