@@ -22,10 +22,7 @@ into this
   "name": "awesome-lib",
   "version": "0.42.0",
   "scripts": {
-    "minify": "cujs"
-  },
-  "cujs": {
-    "input": "dist/awesome-lib.js"
+    "minify": "cujs dist/awesome-lib.js"
   }
 }
 ```
@@ -43,7 +40,7 @@ Instead of `uglify-es`, you can install any other package that provides a binary
 
 `cujs` uses [cosmiconfig] to collect configuration before calling `uglifyjs`.
 
-You can use camelCase variants of all [options supported by `uglifyjs`][options] in your configuration. In addition to that, you can configure input files with the `input` key. Consider this example `cujs.config.js`:
+You can use camelCase variants of all [options supported by `uglifyjs`][options] in your configuration. In addition to that, you can also configure input files with the `input` key instead of passing them as arguments. Consider this example `cujs.config.js`:
 
 ```js
 module.exports = {
@@ -74,11 +71,6 @@ Furthermore, `cujs` tries to be smart about some things. For example, when sourc
 
 If in doubt, run as `DEBUG=cujs cujs` to see what's going on.
 
-
-## TODO
-
-- Accept options on command line?\
-  Problem: We would need to parse the options to consider them while inferring stuff
 
 ## License
 
