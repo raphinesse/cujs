@@ -25,8 +25,7 @@ into this
     "minify": "cujs"
   },
   "cujs": {
-    "input": "dist/awesome-lib.js",
-    "sourceMap": true
+    "input": "dist/awesome-lib.js"
   }
 }
 ```
@@ -67,6 +66,7 @@ foo.js bar.js --output foo.min.js --no-compress --source-map url="foo.min.js.map
 {
   mangle: true,
   compress: true,
+  sourceMap: true,
   comments: /@preserve|@license|@cc_on|^!/i,
 }
 ```
