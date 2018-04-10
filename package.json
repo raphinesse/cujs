@@ -12,6 +12,10 @@
     "test": "xo && ava"
   },
   "bin": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "keywords": [
     "uglify",
     "uglifyjs",
