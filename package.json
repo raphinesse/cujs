@@ -11,7 +11,7 @@
   "bin": "index.js",
   "repository": "raphinesse/cujs",
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && nyc --all ava"
   },
   "xo": {
     "space": 2,
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "nyc": "^11.6.0",
     "xo": "^0.20.3"
   },
   "engines": {
