@@ -1,8 +1,8 @@
-const { promisify } = require('util')
+const pify = require('pify')
 const fixtures = require('test-fixture')
 const { remove } = require('fs-extra')
 
-const copy = promisify(fixtures.Fixtures.prototype.copy)
+const copy = pify(fixtures.Fixtures.prototype.copy)
 
 module.exports = function(...args) {
   const fx = fixtures(...args)
