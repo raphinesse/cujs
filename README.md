@@ -38,7 +38,11 @@ Instead of `uglify-es`, you can install any other package that provides a binary
 
 ## Usage
 
-`cujs` uses [cosmiconfig] to collect configuration before calling `uglifyjs`.
+`cujs` uses [cosmiconfig] to collect configuration before calling `uglifyjs`. That means, `cujs` will look for configuration (all the way up the directory tree until it hits the home directory) in the following places:
+
+- `cujs` property in `package.json`
+- `.cujsrc` file in JSON or YAML format
+- `cujs.config.js` file exporting a JS object
 
 You can use camelCase variants of all [options supported by `uglifyjs`][options] in your configuration. In addition to that, you can also configure input files with the `input` key instead of passing them as arguments. Consider this example `cujs.config.js`:
 
