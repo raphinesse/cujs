@@ -14,11 +14,13 @@ function cli() {
     .then(applyDefaults)
     .then(configToArgs)
     .then(runUglify)
-    .catch(err => {
-      console.error(err)
-      process.exitCode = process.exitCode || 128
-    })
 }
 
 module.exports = cli
-if (require.main === module) cli()
+
+if (require.main === module) {
+  cli().catch(err => {
+    console.error(err)
+    process.exitCode = process.exitCode || 128
+  })
+}
