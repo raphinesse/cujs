@@ -14,6 +14,7 @@ function containsArgs(t, expected) {
   const argsString = configToArgs(config).join(' ')
   t.regex(argsString, new RegExp(` ${escapeRegExp(expected)}( --|$)`))
 }
+
 containsArgs.title = (_, expected) => `args contain ${expected}`
 
 test(containsArgs, '--output foo.min.js')

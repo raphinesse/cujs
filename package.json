@@ -14,6 +14,9 @@
     "test": "xo && nyc --all ava"
   },
   "xo": {
+    "ignores": [
+      "test/fixtures/**"
+    ],
     "space": 2,
     "prettier": true
   },
@@ -37,7 +40,7 @@
     "pify": "^4.0.1",
     "test-fixture": "^1.0.2",
     "uglify-es": "^3.3.9",
-    "xo": "^0.20.3"
+    "xo": "^0.24.0"
   },
   "engines": {
     "node": ">=6"

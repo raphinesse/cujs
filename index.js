@@ -19,8 +19,8 @@ function cli() {
 module.exports = cli
 
 if (require.main === module) {
-  cli().catch(err => {
-    console.error(err)
+  cli().catch(error => {
+    console.error(error)
     process.exitCode = process.exitCode || 128
   })
 }
